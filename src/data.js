@@ -1,0 +1,270 @@
+import { v4 as uuidv4 } from 'uuid' 
+
+const NFTs = [
+  {
+    artist: "Bored Ape Yacht Club",
+    number: 4591,
+    price: 72,
+    favourites: 21900,
+    views: 19900,
+    owner: 'KmadeIT',
+    id: uuidv4(),
+    favourited: false,
+    img: 'bayc/4591.png',
+  },
+  {
+    artist: "Bored Ape Yacht Club",
+    number: 3650,
+    price: 72,
+    favourites: 6300,
+    views: 404600,
+    owner: 'WeAllSurvived',
+    id: uuidv4(),
+    favourited: false,
+    img: 'bayc/3650.png'
+  },
+  {
+    artist: "Bored Ape Yacht Club",
+    number: 5448,
+    price: 72,
+    favourites: 2700,
+    views: 25800,
+    owner: 'Jimipapi',
+    id: uuidv4(),
+    favourited: false,
+    img: 'bayc/5448.png'
+  },
+  {
+    artist: "Bored Ape Yacht Club",
+    number: 3749,
+    price: 72,
+    favourites: 1300,
+    views: 139800,
+    owner: 'TheSandboxGame',
+    id: uuidv4(),
+    favourited: false,
+    img: 'bayc/3749.png'
+  },
+  {
+    artist: "Bored Ape Yacht Club",
+    number: 9187,
+    price: 72,
+    favourites: 272,
+    views: 5400,
+    owner: 'VanquishCapital',
+    id: uuidv4(),
+    favourited: false,
+    img: 'bayc/9187.png'
+  },
+  {
+    artist: "Bored Ape Yacht Club",
+    number: 3410,
+    price: 72,
+    favourites: 947,
+    views: 103900,
+    owner: '0x14B9',
+    id: uuidv4(),
+    favourited: false,
+    img: 'bayc/3410.png'
+  },
+  {
+    artist: "Cryptopunks",
+    number: 9998,
+    price: 124457,
+    favourites: 1900,
+    views: 371800,
+    owner: '9B5A5C',
+    id: uuidv4(),
+    favourited: false,
+    img: 'cryptopunks/9998.png'
+  },
+  {
+    artist: "Cryptopunks",
+    number: 9425,
+    price: 0.36,
+    favourites: 62,
+    views: 536,
+    owner: 'ACB790',
+    id: uuidv4(),
+    favourited: false,
+    img: 'cryptopunks/9425.png'
+  },
+  {
+    artist: "Cryptopunks",
+    number: 5864,
+    price: 15,
+    favourites: 24,
+    views: 1000,
+    owner: 'xyz123abc',
+    id: uuidv4(),
+    favourited: false,
+    img: 'cryptopunks/5864.png'
+  },
+  {
+    artist: "Cryptopunks",
+    number: 2901,
+    price: 97,
+    favourites: 25,
+    views: 950,
+    owner: 'Kirtsting1',
+    id: uuidv4(),
+    favourited: false,
+    img: 'cryptopunks/2901.png'
+  },
+  {
+    artist: "Cryptopunks",
+    number: 4717,
+    price: 0,
+    favourites: 1900,
+    views: 371800,
+    owner: '9B5A5C',
+    id: uuidv4(),
+    favourited: false,
+    img: 'cryptopunks/4717.png'
+  },
+  {
+    artist: "Cryptopunks",
+    number: 7715,
+    price: 44,
+    favourites: 24,
+    views: 869,
+    owner: 'KingKitega-Vault',
+    id: uuidv4(),
+    favourited: false,
+    img: 'cryptopunks/7715.png'
+  },
+  {
+    artist: "Doodles",
+    number: 7080,
+    price: 10,
+    favourites: 39,
+    views: 741,
+    owner: 'thefatduck.eth',
+    id: uuidv4(),
+    favourited: false,
+    img: 'doodles/7080.png'
+  },
+  {
+    artist: "Doodles",
+    number: 6120,
+    price: 69,
+    favourites: 1500,
+    views: 186700,
+    owner: '0percent',
+    id: uuidv4(),
+    favourited: false,
+    img: 'doodles/6120.png'
+  },
+  {
+    artist: "Doodles",
+    number: 2047,
+    price: 8,
+    favourites: 2100,
+    views: 117500,
+    owner: 'F89652',
+    id: uuidv4(),
+    favourited: false,
+    img: 'doodles/2047.png'
+  },
+  {
+    artist: "Doodles",
+    number: 95,
+    price: 8,
+    favourites: 532,
+    views: 36200,
+    owner: 'Zeeraffe',
+    id: uuidv4(),
+    favourited: false,
+    img: 'doodles/95.png'
+  },
+  {
+    artist: "Doodles",
+    number: 316,
+    price: 24,
+    favourites: 367,
+    views: 25300,
+    owner: 'tulipvault2',
+    id: uuidv4(),
+    favourited: false,
+    img: 'doodles/316.png'
+  },
+  {
+    artist: "Doodles",
+    number: 7573,
+    price: 27,
+    favourites: 383,
+    views: 15600,
+    owner: 'SOS1USD',
+    id: uuidv4(),
+    favourited: false,
+    img: 'doodles/7573.png'
+  },
+  {
+    artist: "Moonbirds",
+    number: 8173,
+    price: 0,
+    favourites: 789,
+    views: 43200,
+    owner: '32EE26',
+    id: uuidv4(),
+    favourited: false,
+    img: 'moonbirds/8173.png'
+  },
+  {
+    artist: "Moonbirds",
+    number: 9378,
+    price: 16,
+    favourites: 227,
+    views: 5700,
+    owner: 'FlowChaser444',
+    id: uuidv4(),
+    favourited: false,
+    img: 'moonbirds/9378.png'
+  },
+  {
+    artist: "Moonbirds",
+    number: 5602,
+    price: 157,
+    favourites: 49,
+    views: 6000,
+    owner: '79D4D0',
+    id: uuidv4(),
+    favourited: false,
+    img: 'moonbirds/8173.png'
+  },
+  {
+    artist: "Moonbirds",
+    number: 974,
+    price: 99,
+    favourites: 57,
+    views: 5300,
+    owner: 'A9338D',
+    id: uuidv4(),
+    favourited: false,
+    img: 'moonbirds/974.png'
+  },
+  {
+    artist: "Moonbirds",
+    number: 994,
+    price: 0,
+    favourites: 124,
+    views: 4700,
+    owner: '2AD926',
+    id: uuidv4(),
+    favourited: false,
+    img: 'moonbirds/994.png'
+  },
+  {
+    artist: "Moonbirds",
+    number: 3382,
+    price: 19,
+    favourites: 23,
+    views: 916,
+    owner: '51328E',
+    id: uuidv4(),
+    favourited: false,
+    img: 'moonbirds/3382.png'
+  },
+]
+
+export default NFTs
