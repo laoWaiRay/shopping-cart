@@ -1,7 +1,7 @@
 import React from 'react'
-import { NFTs, NFTImages } from '../../data';
+import { NFTImages } from '../../data';
 import Layout from '../Layout';
-import '../../css/Homepage.css'
+import '../../css/HomePage.css'
 import CardLink from '../CardLink';
 import Carousel from '../Carousel';
 import { NavLink } from 'react-router-dom';

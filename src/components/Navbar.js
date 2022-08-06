@@ -9,7 +9,7 @@ export default function Navbar() {
         <NavLink to='/' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Home</li>
         </NavLink>
-        <NavLink to='/onions' className='navbar-nav-item'>
+        <NavLink to='/shop' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Shop</li>
         </NavLink>
         <NavLink to='/potatoes' className='navbar-nav-item'>
