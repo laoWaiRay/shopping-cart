@@ -8,13 +8,12 @@
 
 .artist-links-heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .artist-links {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card-link {
@@ -24,8 +23,8 @@
 }
 
 .card-link-img-wrapper {
-  height: 15rem;
-  width: 15rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
 }
 
@@ -43,7 +42,7 @@
 }
 
 .trending-heading {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .navigate-to-shop-btn {
