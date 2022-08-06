@@ -1,0 +1,69 @@
+.homepage {
+  padding: 3rem;
+  min-height: calc(100vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.artist-links-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.artist-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-link-img-wrapper {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.card-link-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-link-artist {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.trending-heading {
+  margin-bottom: 1rem;
+}
+
+.navigate-to-shop-btn {
+  padding: 1.5rem 3rem;
+  border: 0;
+  border-radius: 1.2rem;
+  color: #fff;
+  background-color: rgb(23, 133, 236);
+  transition: filter 200ms;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.navigate-to-shop-btn-wrapper {
+  align-self: center;
+  margin: 5rem;
+  margin-bottom: 0;
+}
+
+.navigate-to-shop-btn:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}

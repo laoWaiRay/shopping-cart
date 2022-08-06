@@ -10,6 +10,7 @@ const NFTs = [
     owner: 'KmadeIT',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'bayc/4591.png',
   },
   {
@@ -21,6 +22,7 @@ const NFTs = [
     owner: 'WeAllSurvived',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'bayc/3650.png'
   },
   {
@@ -32,6 +34,7 @@ const NFTs = [
     owner: 'Jimipapi',
     id: uuidv4(),
     favourited: false,
+    featured: true,
     img: 'bayc/5448.png'
   },
   {
@@ -43,6 +46,7 @@ const NFTs = [
     owner: 'TheSandboxGame',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'bayc/3749.png'
   },
   {
@@ -54,6 +58,7 @@ const NFTs = [
     owner: 'VanquishCapital',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'bayc/9187.png'
   },
   {
@@ -65,6 +70,7 @@ const NFTs = [
     owner: '0x14B9',
     id: uuidv4(),
     favourited: false,
+    featured: true,
     img: 'bayc/3410.png'
   },
   {
@@ -76,6 +82,7 @@ const NFTs = [
     owner: '9B5A5C',
     id: uuidv4(),
     favourited: false,
+    featured: true,
     img: 'cryptopunks/9998.png'
   },
   {
@@ -87,6 +94,7 @@ const NFTs = [
     owner: 'ACB790',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'cryptopunks/9425.png'
   },
   {
@@ -98,6 +106,7 @@ const NFTs = [
     owner: 'xyz123abc',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'cryptopunks/5864.png'
   },
   {
@@ -109,6 +118,7 @@ const NFTs = [
     owner: 'Kirtsting1',
     id: uuidv4(),
     favourited: false,
+    featured: true,
     img: 'cryptopunks/2901.png'
   },
   {
@@ -120,6 +130,7 @@ const NFTs = [
     owner: '9B5A5C',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'cryptopunks/4717.png'
   },
   {
@@ -131,6 +142,7 @@ const NFTs = [
     owner: 'KingKitega-Vault',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'cryptopunks/7715.png'
   },
   {
@@ -142,6 +154,7 @@ const NFTs = [
     owner: 'thefatduck.eth',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'doodles/7080.png'
   },
   {
@@ -153,6 +166,7 @@ const NFTs = [
     owner: '0percent',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'doodles/6120.png'
   },
   {
@@ -164,6 +178,7 @@ const NFTs = [
     owner: 'F89652',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'doodles/2047.png'
   },
   {
@@ -175,6 +190,7 @@ const NFTs = [
     owner: 'Zeeraffe',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'doodles/95.png'
   },
   {
@@ -186,6 +202,7 @@ const NFTs = [
     owner: 'tulipvault2',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'doodles/316.png'
   },
   {
@@ -197,6 +214,7 @@ const NFTs = [
     owner: 'SOS1USD',
     id: uuidv4(),
     favourited: false,
+    featured: true,
     img: 'doodles/7573.png'
   },
   {
@@ -208,6 +226,7 @@ const NFTs = [
     owner: '32EE26',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'moonbirds/8173.png'
   },
   {
@@ -219,6 +238,7 @@ const NFTs = [
     owner: 'FlowChaser444',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'moonbirds/9378.png'
   },
   {
@@ -230,6 +250,7 @@ const NFTs = [
     owner: '79D4D0',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'moonbirds/8173.png'
   },
   {
@@ -241,6 +262,7 @@ const NFTs = [
     owner: 'A9338D',
     id: uuidv4(),
     favourited: false,
+    featured: true,
     img: 'moonbirds/974.png'
   },
   {
@@ -252,6 +274,7 @@ const NFTs = [
     owner: '2AD926',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'moonbirds/994.png'
   },
   {
@@ -263,8 +286,16 @@ const NFTs = [
     owner: '51328E',
     id: uuidv4(),
     favourited: false,
+    featured: false,
     img: 'moonbirds/3382.png'
   },
 ]
 
-export default NFTs
+const NFTImages = {
+  bayc: 'logos/bayc-logo.png',
+  cryptopunks: 'logos/cryptopunks-logo.png',
+  doodles: 'logos/doodles-logo.png',
+  moonbirds: 'logos/moonbirds-logo.png'
+}
+
+export { NFTs, NFTImages }

@@ -1,0 +1,31 @@
+.not-found-page {
+  height: calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-msg {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigate-home-btn {
+  padding: 1.5rem 3rem;
+  border: 0;
+  border-radius: 1.2rem;
+  color: #fff;
+  background-color: rgb(23, 133, 236);
+  transition: filter 200ms;
+}
+
+.navigate-home-btn:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.btn-link-wrapper {
+  display: block;
+  margin: 2rem;
+}

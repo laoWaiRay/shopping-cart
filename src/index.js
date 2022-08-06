@@ -1,29 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import NFTs from './data';
+import './css/index.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Homepage from './components/pages/Homepage';
+import NotFound from './components/pages/NotFound';
 
-/* Importing images and gifs using require.context because of how webpack works */
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item) => { 
-    return images[item.replace('./', '')] = r(item);
-  });
-  return images
-}
-const requiredImgs = require.context('./assets/img', true, /\.png$/);
-const images = importAll(requiredImgs);
-
-/* ---------------------------------------------------------------------------- */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    {NFTs.map((NFT) => {
-      return <img src={images[NFT.img]} alt='lol' key={NFT.id}/>
-    })}
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,0 +1,91 @@
+.carousel {
+  position: relative;
+  height: 25vw;
+  max-height: 30rem;
+}
+
+.window {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.track {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 500ms;
+}
+
+.carousel-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  /* display: flex; */
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+.carousel-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+}
+
+.carousel-btn:hover {
+  cursor: pointer;
+}
+
+.carousel-btn.active {
+  background-color: rgba(0, 0, 0, 0.362);
+}
+
+.slider-left,
+.slider-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+  color: #fff;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms;
+}
+
+.slider-left:hover,
+.slider-right:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  transform: scale(3);
+}
+
+.slider-left {
+  left: 0rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slider-right {
+  right: 0rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
