@@ -9,7 +9,7 @@ const NFTs = [
     views: 19900,
     owner: 'KmadeIT',
     id: uuidv4(),
-    favourited: false,
+    favourited: true,
     featured: false,
     img: 'bayc/4591.png',
   },

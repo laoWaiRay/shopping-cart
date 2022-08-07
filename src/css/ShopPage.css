@@ -173,3 +173,53 @@
   justify-content: space-between;
   height: 7rem;
 }
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 8rem;
+  height: calc(100vh - 8rem);
+  width: 25vw;
+  z-index: 10;
+  background-color: #f5f5f5;
+  padding: 3rem;
+  left: -25vw;
+  transition: all 500ms;
+}
+
+.sidebar-heading-main {
+  display: flex;
+  justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.sidebar-heading,
+.sidebar-heading-main {
+  font-weight: 500;
+}
+
+.sidebar-close-btn {
+  border: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  right: 3rem;
+}
+
+.sidebar-close-btn:hover {
+  cursor: pointer;
+}
+
+.sidebar-group {
+  padding: 2rem 0;
+}
+
+.artist-group,
+.price-group {
+  padding: 1rem 0;
+}
+
+.checkbox {
+  margin-right: 1rem;
+}
