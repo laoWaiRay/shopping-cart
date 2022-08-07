@@ -62,10 +62,12 @@ export default function Carousel(props) {
           <CarouselGroup 
             imgs={props.imgs}
             featuredImgs={[featuredNFTs[0], featuredNFTs[1], featuredNFTs[2]]}
+            ids={[featuredNFTs[0].id, featuredNFTs[1].id, featuredNFTs[2].id]}
           />
           <CarouselGroup 
             imgs={props.imgs}
             featuredImgs={[featuredNFTs[3], featuredNFTs[4], featuredNFTs[5]]}
+            ids={[featuredNFTs[3].id, featuredNFTs[4].id, featuredNFTs[5].id]}
           />
         </div>
       </div>

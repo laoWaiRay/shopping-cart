@@ -1,0 +1,110 @@
+.view-page {
+  padding: 3rem 3rem;
+  height: calc(100vh - 8rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.nft-panel {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.nft-artist {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+
+.nft-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.nft-info {
+  font-size: 2rem;
+}
+
+.nft-image-container,
+.nft-image {
+  height: 100%;
+  width: 100%;
+}
+
+.nft-image-container {
+  display: flex;
+  align-items: center;
+}
+
+.nft-image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.nft-image {
+  object-fit: contain;
+}
+
+.nft-info-item {
+  margin: .5rem 0;
+}
+
+.nft-owner {
+  font-size: 2rem;
+  color: rgb(23, 133, 236);
+  margin-left: 1rem;
+}
+
+.nft-panel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nft-panel-info,
+.nft-panel-pricing {
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+.nft-panel-info > *:first-child {
+  padding-top: 0;
+}
+
+.nft-info-item {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  /* display: flex; */
+  /* width: fit-content; */
+  /* align-items: center; */
+  font-weight: 500;
+}
+
+.nft-info-item .fa-eye {
+  color: #000;
+  font-size: 2.5rem;
+}
+
+.nft-info-item .fa-heart {
+  -webkit-text-stroke-color: #000;
+  font-size: 2.5rem;
+}
+
+.nft-info-item .fa-heart:hover {
+  -webkit-text-stroke-color: red;
+}

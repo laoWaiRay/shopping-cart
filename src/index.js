@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import ShopPage from './components/pages/ShopPage';
 import NotFound from './components/pages/NotFound';
+import ViewPage from './components/pages/ViewPage';
 
 
 
@@ -15,6 +16,7 @@ root.render(
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/shop' element={<ShopPage />} />
+        <Route path='/view/:id' element={<ViewPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
