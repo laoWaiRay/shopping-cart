@@ -1,10 +1,12 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export default function Navbar() {
   return (
     <div className='navbar'>
-      <h1 className='navbar-logo'>NFT Marketplace</h1>
+      <Link to='/'>
+        <h1 className='navbar-logo'>NFT Marketplace</h1>
+      </Link>
       <ul className='navbar-nav'>
         <NavLink to='/' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Home</li>

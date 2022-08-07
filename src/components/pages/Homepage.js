@@ -30,18 +30,22 @@ export default function Homepage() {
           <CardLink 
             artist='Bored Apes YC'
             img={images[NFTImages.bayc]}
+            filter='bayc'
           />
           <CardLink 
             artist='Cryptopunks'
             img={images[NFTImages.cryptopunks]}
+            filter='cryptopunks'
           />
           <CardLink 
             artist='Doodles'
             img={images[NFTImages.doodles]}
+            filter='doodles'
           />
           <CardLink 
             artist='Moonbirds'
             img={images[NFTImages.moonbirds]}
+            filter='moonbirds'
           />
         </div>
       </div>
@@ -51,7 +55,7 @@ export default function Homepage() {
         <Carousel imgs={images}/>
       </div>
       
-      <Link className='navigate-to-shop-btn-wrapper' to='/shop'>
+      <Link className='navigate-to-shop-btn-wrapper' to='/shop' >
         <button className='navigate-to-shop-btn'>View All</button>
       </Link>
     </div>

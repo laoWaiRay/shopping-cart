@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Layout from '../Layout'
 import Selector from '../Selector'
 import '../../css/ShopPage.css'
@@ -19,7 +20,6 @@ const requiredImgs = require.context('../../assets/img', true, /\.png$/);
 const images = importAll(requiredImgs);
 
 /* ---------------------------------------------------------------------------- */
-console.dir(NFTs)
 
 export default function ShopPage() {
   const [displayedNFTs, setDisplayedNFTs] = useState(NFTs)
@@ -28,6 +28,8 @@ export default function ShopPage() {
   const [priceFiltersActive, setPriceFiltersActive] = useState(false);
   const [displayedNFTsBeforePriceFilterActive, setDisplayedNFTsBeforePriceFilterActive] = useState([]);
   const [triggerRender, setTriggerRender] = useState(false);
+
+  const location = useLocation();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -149,6 +151,32 @@ export default function ShopPage() {
     NFT.favourited = !NFT.favourited;
     setTriggerRender(!triggerRender)
   }
+
+  useEffect(() => {
+    if (location.state) {
+      if (location.state.filter === 'bayc') {
+        toggleArtist({target: {checked: true}}, 'Bored Ape Yacht Club');
+        const checkbox = document.querySelector('input#bayc');
+        checkbox.checked = true;
+      }
+      if (location.state.filter === 'cryptopunks') {
+        toggleArtist({target: {checked: true}}, 'Cryptopunks');
+        const checkbox = document.querySelector('input#cryptopunks');
+        checkbox.checked = true;
+      }
+      if (location.state.filter === 'doodles') {
+        toggleArtist({target: {checked: true}}, 'Doodles');
+        const checkbox = document.querySelector('input#doodles');
+        checkbox.checked = true;
+      }
+      if (location.state.filter === 'moonbirds') {
+        toggleArtist({target: {checked: true}}, 'Moonbirds');
+        const checkbox = document.querySelector('input#moonbirds');
+        checkbox.checked = true;
+      }
+    }
+    return
+  }, [])
 
   return (
     <Layout>
