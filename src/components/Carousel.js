@@ -7,8 +7,6 @@ const featuredNFTs = NFTs.filter((NFT) => {
   return NFT.featured === true;
 })
 
-console.log(featuredNFTs)
-
 export default function Carousel(props) {
   const [screenResized, setScreenResized] = useState(false);
 

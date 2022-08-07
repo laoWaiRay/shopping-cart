@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-export default function Selector() {
+export default function Selector(props) {
   const [selectedValue, setSelectedValue] = useState('Sort by...');
   const [isOpen, setIsOpen] = useState({value: false});
 
@@ -10,9 +10,34 @@ export default function Selector() {
     })
   }
 
-  const changeValue = (newValue) => {
+  const sortByRelevancy = () => {
     toggleIsOpen();
-    setSelectedValue(newValue);
+    setSelectedValue('Relevancy');
+    props.showAll();
+  }
+
+  const sortByLowestPrice = () => {
+    toggleIsOpen();
+    setSelectedValue('Lowest Price');
+    props.sortByLowestPrice();
+  }
+
+  const sortByHighestPrice = () => {
+    toggleIsOpen();
+    setSelectedValue('Highest Price');
+    props.sortByHighestPrice();
+  }
+
+  const sortByMostViews = () => {
+    toggleIsOpen();
+    setSelectedValue('Most Views');
+    props.sortByMostViews();
+  }
+
+  const sortByMostFavourites = () => {
+    toggleIsOpen();
+    setSelectedValue('Most Favourites');
+    props.sortByMostFavourites();
   }
 
   useEffect(() => {
@@ -30,11 +55,11 @@ export default function Selector() {
         <div className='selector-trigger' onClick={toggleIsOpen}></div>
         {isOpen.value === true ? 
           <div className='selector-options'>
-            <div className='selector-option' onClick={() => {changeValue('Relevancy')}}>Relevancy</div>
-            <div className='selector-option' onClick={() => {changeValue('Lowest Price')}}>Lowest Price</div>
-            <div className='selector-option' onClick={() => {changeValue('Highest Price')}}>Highest Price</div>
-            <div className='selector-option' onClick={() => {changeValue('Most Views')}}>Most Views</div>
-            <div className='selector-option' onClick={() => {changeValue('Most Favourites')}}>Most Favourites</div>
+            <div className='selector-option' onClick={sortByRelevancy}>Relevancy</div>
+            <div className='selector-option' onClick={sortByLowestPrice}>Lowest Price</div>
+            <div className='selector-option' onClick={sortByHighestPrice}>Highest Price</div>
+            <div className='selector-option' onClick={sortByMostViews}>Most Views</div>
+            <div className='selector-option' onClick={sortByMostFavourites}>Most Favourites</div>
           </div>
           : null
         }
