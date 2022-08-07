@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .grid {
@@ -12,15 +13,18 @@
   grid-template-rows: 1fr;
   gap: 2rem;
   width: 100%;
+  align-items: center;
 }
 
 .nft-panel {
   display: grid;
+  height: 100%;
   grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
 }
 
-.nft-artist {
+.nft-artist,
+.pricing-heading {
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: .5rem;
@@ -38,18 +42,23 @@
 
 .nft-image-container,
 .nft-image {
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .nft-image-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nft-image-wrapper {
   height: 100%;
+  max-height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nft-image {
@@ -64,6 +73,10 @@
   font-size: 2rem;
   color: rgb(23, 133, 236);
   margin-left: 1rem;
+}
+
+.nft-owner:hover {
+  cursor: pointer;
 }
 
 .nft-panel-info {
@@ -89,9 +102,6 @@
   display: flex;
   align-items: center;
   padding: .5rem;
-  /* display: flex; */
-  /* width: fit-content; */
-  /* align-items: center; */
   font-weight: 500;
 }
 
@@ -107,4 +117,152 @@
 
 .nft-info-item .fa-heart:hover {
   -webkit-text-stroke-color: red;
+}
+
+.price-box {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.bid-btn,
+.cart-btn,
+.submit-bid-btn,
+.cancel-bid-btn {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  border: 0;
+  border-radius: 1.2rem;
+  color: #fff;
+  background-color: rgb(23, 133, 236);
+  transition: filter 200ms;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.cart-btn {
+  background-color: rgb(211, 161, 25);
+}
+
+.cancel-bid-btn {
+  background-color: rgb(137, 137, 137);
+}
+
+.bid-btn,
+.submit-bid-btn {
+  margin-right: 1rem;
+}
+
+.bid-btn:hover,
+.cart-btn:hover,
+.submit-bid-btn:hover,
+.cancel-bid-btn:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.bid-modal {
+  background-color: rgba(0, 0, 0, 0.187);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bid-modal-inner {
+  width: 42rem;
+  height: 28rem;
+  background-color: #fff;
+  font-size: 2rem;
+  padding: 4rem;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.last-sold-price-number {
+  margin-left: 1rem;
+}
+
+.modal-close-btn {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.modal-close-btn:hover {
+  cursor: pointer;
+}
+
+.last-sold-price {
+  margin-bottom: 3rem;
+}
+
+.input-wrapper{
+  display: inline-block;
+  position: relative;
+}
+
+.bid-amount-input {
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.bid-amount-input::placeholder {
+  font-family: inherit;
+  font-weight: 100;
+  color: #bdb5b5;
+}
+
+.number-controls {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 2px;
+  right: 2px;
+  height: 90%;
+}
+
+.increment-icon,
+.decrement-icon {
+  transform: translateY(-5px);
+}
+
+.increment,
+.decrement {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.229);
+  color: #bdb5b5;
+  padding: 0 2px;
+  margin: 0;
+  height: 50%;
+}
+
+.decrement-icon {
+  transform: rotateX(180deg) translateY(7px);
+}
+
+.increment:hover,
+.decrement:hover {
+  cursor: pointer;
+  filter: brightness(0);
+}
+
+.form-group {
+  margin-bottom: 3rem;
+}
+
+.input-currency {
+  position: absolute;
+  top: 7px;
+  right: 175px;
 }

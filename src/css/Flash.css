@@ -1,0 +1,19 @@
+.flash-message {
+  background-color: rgb(125, 197, 17);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flash-message-inner {
+  margin-right: 5.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+}

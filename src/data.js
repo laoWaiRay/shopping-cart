@@ -11,6 +11,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: true,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'bayc/4591.png',
   },
   {
@@ -23,6 +25,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'bayc/3650.png'
   },
   {
@@ -35,6 +39,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: true,
+    inCart: false,
+    bid: 0,
     img: 'bayc/5448.png'
   },
   {
@@ -47,6 +53,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'bayc/3749.png'
   },
   {
@@ -59,6 +67,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'bayc/9187.png'
   },
   {
@@ -71,6 +81,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: true,
+    inCart: false,
+    bid: 0,
     img: 'bayc/3410.png'
   },
   {
@@ -83,6 +95,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: true,
+    inCart: false,
+    bid: 0,
     img: 'cryptopunks/9998.png'
   },
   {
@@ -95,6 +109,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'cryptopunks/9425.png'
   },
   {
@@ -107,6 +123,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'cryptopunks/5864.png'
   },
   {
@@ -119,6 +137,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: true,
+    inCart: false,
+    bid: 0,
     img: 'cryptopunks/2901.png'
   },
   {
@@ -131,6 +151,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'cryptopunks/4717.png'
   },
   {
@@ -143,6 +165,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'cryptopunks/7715.png'
   },
   {
@@ -155,6 +179,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'doodles/7080.png'
   },
   {
@@ -167,6 +193,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'doodles/6120.png'
   },
   {
@@ -179,6 +207,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'doodles/2047.png'
   },
   {
@@ -191,6 +221,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'doodles/95.png'
   },
   {
@@ -203,6 +235,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'doodles/316.png'
   },
   {
@@ -215,6 +249,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: true,
+    inCart: false,
+    bid: 0,
     img: 'doodles/7573.png'
   },
   {
@@ -227,6 +263,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'moonbirds/8173.png'
   },
   {
@@ -239,6 +277,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'moonbirds/9378.png'
   },
   {
@@ -251,6 +291,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'moonbirds/8173.png'
   },
   {
@@ -263,6 +305,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: true,
+    inCart: false,
+    bid: 0,
     img: 'moonbirds/974.png'
   },
   {
@@ -275,6 +319,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'moonbirds/994.png'
   },
   {
@@ -287,6 +333,8 @@ const NFTs = [
     id: uuidv4(),
     favourited: false,
     featured: false,
+    inCart: false,
+    bid: 0,
     img: 'moonbirds/3382.png'
   },
 ]

@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import { NFTs } from '../../data'
 import Layout from '../Layout';
+import BidModal from '../BidModal';
+import Flash from '../Flash';
 import '../../css/ViewPage.css'
 
 /* Importing images and gifs using require.context because of how webpack works */
@@ -32,13 +34,47 @@ const formatViews = (views) => {
 
 export default function ViewPage() {
   const [render, forceRender] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isFlashActive, setIsFlashActive] = useState(false);
+  const [flashMessage, setFlashMessage] = useState('');
+  const [flashColor, setFlashColor] = useState('');
+
+  const timeoutRef = useRef(null);
+
+  const triggerFlash = (message, rgb) => {
+    clearTimeout(timeoutRef.current)
+    setFlashMessage(message)
+    setFlashColor(rgb)
+    setIsFlashActive(true)
+    timeoutRef.current = setTimeout(() => {
+      setIsFlashActive(false)
+    }, 5000)
+  }
 
   let { id } = useParams();
   const NFT = NFTs.find((NFT) => NFT.id === id);
 
+  const toggleCarted = (NFT) => {
+    NFT.inCart = !NFT.inCart
+    if (NFT.inCart === true) {
+      triggerFlash('Added to cart!', 'rgb(125, 197, 17)')
+    } else {
+      triggerFlash('Removed from cart', 'rgb(211, 161, 25)')
+    }
+  }
+
   const toggleFavourite = () => {
     NFT.favourited = !NFT.favourited;
+    if (NFT.favourited) {
+      NFT.favourites = NFT.favourites + 1;
+    } else {
+      NFT.favourites = NFT.favourites - 1;
+    }
     forceRender(!render)
+  }
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
   }
 
   return (
@@ -70,8 +106,47 @@ export default function ViewPage() {
             <div className='nft-panel-pricing'>
               <h2 className='pricing-heading'>Current Price</h2>
               <div className='price-box'>{NFT.price} <i className="fa-brands fa-ethereum" /> ({ethereumToUsd(NFT.price)} USD)</div>
+              <div className='pricing-btns'>
+                <button className='bid-btn' onClick={toggleModal}>Make an offer</button>
+                {NFT.inCart === false ? 
+                  <button 
+                    className='cart-btn' 
+                    onClick={() => {toggleCarted(NFT)}}
+                  >
+                    Add to cart
+                  </button>
+                  :
+                  <button 
+                    className='cart-btn' 
+                    onClick={() => {toggleCarted(NFT)}}
+                    style={{background: 'rgb(137, 137, 137)'}}
+                  >
+                    Remove from cart
+                  </button>
+                }
+                
+              </div>
             </div>
           </div>
+
+          {isModalOpen ? 
+            <BidModal
+              price={NFT.price}
+              toggleModal={toggleModal}
+            />
+            :
+            null
+          }
+        
+          {isFlashActive ?
+            <Flash 
+              message={flashMessage}
+              color={flashColor}
+            />
+            :
+            null
+          }
+
         </div>
       </div>
     </Layout>
