@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../Layout'
 import '../../css/NotFound.css'
-import { NavLink } from 'react-router-dom' 
+import { Link } from 'react-router-dom' 
 
 export default function NotFound() {
   return (
@@ -9,9 +9,9 @@ export default function NotFound() {
       <div className='not-found-page'>
         <div className='not-found-msg'>
           Sorry, the page you were looking for does not exist
-          <NavLink className='btn-link-wrapper' to='/shopping-cart'>
+          <Link className='btn-link-wrapper' to='/shopping-cart'>
             <button className='navigate-home-btn'>Back to Home</button>
-          </NavLink>
+          </Link>
         </div>
       </div>
     </Layout>

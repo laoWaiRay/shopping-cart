@@ -8,7 +8,7 @@ export default function Navbar() {
         <h1 className='navbar-logo'><span className='NFT'>NFT</span> Marketplace</h1>
       </Link>
       <ul className='navbar-nav'>
-        <NavLink to='/shopping-cart' className='navbar-nav-item'>
+        <NavLink to='/shopping-cart/' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Home</li>
         </NavLink>
         <NavLink to='/shopping-cart/shop' className='navbar-nav-item'>
