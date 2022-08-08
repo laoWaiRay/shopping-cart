@@ -9,7 +9,7 @@ export default function NotFound() {
       <div className='not-found-page'>
         <div className='not-found-msg'>
           Sorry, the page you were looking for does not exist
-          <NavLink className='btn-link-wrapper' to='/'>
+          <NavLink className='btn-link-wrapper' to='/shopping-cart'>
             <button className='navigate-home-btn'>Back to Home</button>
           </NavLink>
         </div>

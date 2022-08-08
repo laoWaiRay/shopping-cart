@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ethereumToUsd = (eth) => {
@@ -28,7 +28,7 @@ export default function Card(props) {
         </span>
         <span className='card-views'>{formatViews(props.views)} <i className="fa-solid fa-eye fa-xl" /> </span>
       </div>
-      <Link to={`/view/${props.id}`} >
+      <Link to={`/shopping-cart/view/${props.id}`} >
         <img className='card-img' alt='NFT card' src={props.img} />
       </Link>
       <h2 className='card-number'>{props.artist} #{props.number}</h2>

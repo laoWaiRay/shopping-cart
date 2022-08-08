@@ -4,17 +4,17 @@ import { NavLink, Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <div className='navbar'>
-      <Link to='/'>
+      <Link to='/shopping-cart'>
         <h1 className='navbar-logo'><span className='NFT'>NFT</span> Marketplace</h1>
       </Link>
       <ul className='navbar-nav'>
-        <NavLink to='/' className='navbar-nav-item'>
+        <NavLink to='/shopping-cart' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Home</li>
         </NavLink>
-        <NavLink to='/shop' className='navbar-nav-item'>
+        <NavLink to='/shopping-cart/shop' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Shop</li>
         </NavLink>
-        <NavLink to='/cart' className='navbar-nav-item'>
+        <NavLink to='/shopping-cart/cart' className='navbar-nav-item'>
           <li className='navbar-nav-link' >Cart</li>
         </NavLink>
       </ul>

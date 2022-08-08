@@ -4,7 +4,7 @@ import Layout from '../Layout';
 import '../../css/HomePage.css'
 import CardLink from '../CardLink';
 import Carousel from '../Carousel';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 /* Importing images and gifs using require.context because of how webpack works */
 
@@ -55,7 +55,7 @@ export default function Homepage() {
         <Carousel imgs={images}/>
       </div>
       
-      <Link className='navigate-to-shop-btn-wrapper' to='/shop' >
+      <Link className='navigate-to-shop-btn-wrapper' to='/shopping-cart/shop' >
         <button className='navigate-to-shop-btn'>View All</button>
       </Link>
     </div>

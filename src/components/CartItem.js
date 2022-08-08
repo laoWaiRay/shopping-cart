@@ -10,7 +10,7 @@ export default function CartItem(props) {
   const NFT = props.NFT;
   return (
     <div className='cart-item'>
-      <Link to={`/view/${NFT.id}`}>
+      <Link to={`/shopping-cart/view/${NFT.id}`}>
         <img className='cart-item-img' src={props.img} alt='nft' />
       </Link>
       <div className='cart-item-info'>

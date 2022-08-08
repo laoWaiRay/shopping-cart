@@ -15,10 +15,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/shop' element={<ShopPage />} />
-        <Route path='/view/:id' element={<ViewPage />} />
-        <Route path='/cart' element={<CartPage />} />
+        <Route path='/shopping-cart/' element={<HomePage />} />
+        <Route path='/shopping-cart/shop' element={<ShopPage />} />
+        <Route path='/shopping-cart/view/:id' element={<ViewPage />} />
+        <Route path='/shopping-cart/cart' element={<CartPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
