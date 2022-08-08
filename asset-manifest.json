@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.d76f0c33.css",
+    "main.js": "/shopping-cart/static/js/main.1fbe9c13.js",
+    "static/media/doodles-logo.png": "/shopping-cart/static/media/doodles-logo.daddf7b4d6c0c28c35d8.png",
+    "static/media/cryptopunks-logo.png": "/shopping-cart/static/media/cryptopunks-logo.49d065948fcde80d243e.png",
+    "static/media/3749.png": "/shopping-cart/static/media/3749.68443b3de6d0681372cd.png",
+    "static/media/9187.png": "/shopping-cart/static/media/9187.b8ccf126891b8c715917.png",
+    "static/media/5448.png": "/shopping-cart/static/media/5448.3662203c7aebe1c07365.png",
+    "static/media/4591.png": "/shopping-cart/static/media/4591.d6b36ea083dab8b010f0.png",
+    "static/media/3650.png": "/shopping-cart/static/media/3650.44b897e6f25019144710.png",
+    "static/media/3410.png": "/shopping-cart/static/media/3410.eb399ab57995a6255de4.png",
+    "static/media/974.png": "/shopping-cart/static/media/974.967b37ecd917ef4fe76e.png",
+    "static/media/7080.png": "/shopping-cart/static/media/7080.0eb1f29b953ccec54849.png",
+    "static/media/moonbirds-logo.png": "/shopping-cart/static/media/moonbirds-logo.ebe1c5cc30bad9e21699.png",
+    "static/media/2047.png": "/shopping-cart/static/media/2047.6f03c0a4ace2a2a6aeac.png",
+    "static/media/316.png": "/shopping-cart/static/media/316.c19edcece5c19fe279d7.png",
+    "static/media/7573.png": "/shopping-cart/static/media/7573.af6b99f3f5f682756bdf.png",
+    "static/media/95.png": "/shopping-cart/static/media/95.4c148f52ebf7f0c8b849.png",
+    "static/media/bayc-logo.png": "/shopping-cart/static/media/bayc-logo.16e9c70e4054658bb095.png",
+    "static/media/5602.png": "/shopping-cart/static/media/5602.d9e3a9577e5a83fcd45d.png",
+    "static/media/3382.png": "/shopping-cart/static/media/3382.a85525bc3f65c1727ab4.png",
+    "static/media/994.png": "/shopping-cart/static/media/994.7ca9ce799347c5023708.png",
+    "static/media/6120.png": "/shopping-cart/static/media/6120.99157f67fbdb28f867b6.png",
+    "static/media/9378.png": "/shopping-cart/static/media/9378.5a581095e7e62ec7965e.png",
+    "static/media/8173.png": "/shopping-cart/static/media/8173.cc8dd5ac5265554544b6.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.d76f0c33.css.map": "/shopping-cart/static/css/main.d76f0c33.css.map",
+    "main.1fbe9c13.js.map": "/shopping-cart/static/js/main.1fbe9c13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d76f0c33.css",
+    "static/js/main.1fbe9c13.js"
+  ]
+}
