@@ -23,7 +23,7 @@ export default function Card(props) {
           {formatViews(props.favourites)} 
           {props.favourited ? 
             <i className="fa-solid fa-heart fa-2xl" style={{color: 'red', WebkitTextStrokeColor: 'red'}} onClick={props.toggleFavourite} data-id-heart={props.id} /> :
-            <i className="fa-solid fa-heart fa-2xl" onClick={props.toggleFavourite} data-id-heart={props.id} /> 
+            <i className="fa-solid fa-heart fa-2xl" style={{color: 'transparent', WebkitTextStrokeColor: 'white'}} onClick={props.toggleFavourite} data-id-heart={props.id} /> 
           }
         </span>
         <span className='card-views'>{formatViews(props.views)} <i className="fa-solid fa-eye fa-xl" /> </span>

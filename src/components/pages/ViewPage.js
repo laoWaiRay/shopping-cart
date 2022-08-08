@@ -105,9 +105,10 @@ export default function ViewPage() {
                 </span>
                 <span className='nft-info-item'>{formatViews(NFT.views)} <i className="fa-solid fa-eye fa-xl" /></span>   
                 <span className='nft-info-item'>{formatViews(NFT.favourites)}
-                  {NFT.favourited ? 
-                  <i className="fa-solid fa-heart fa-2xl" style={{color: 'red', WebkitTextStrokeColor: 'red'}} onClick={toggleFavourite} data-id-heart={NFT.id}/> : 
-                  <i className="fa-solid fa-heart fa-2xl" onClick={toggleFavourite} data-id-heart={NFT.id}/>}
+                  {NFT.favourited === true ? 
+                  <i className="fa-solid fa-heart fa-2xl" style={{color: 'red', WebkitTextStrokeColor: 'red'}} onClick={toggleFavourite} data-id-heart={NFT.id}/> 
+                  : 
+                  <i className="fa-solid fa-heart fa-2xl" style={{color: 'transparent', WebkitTextStrokeColor: 'black'}} onClick={toggleFavourite} data-id-heart={NFT.id}/>}
                 </span>
               </div>
             </div>
