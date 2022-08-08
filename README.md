@@ -1,1 +1,1 @@
-[live preview](https://laowairay.github.io/shopping-cart)
+[live preview](https://laowairay.github.io/shopping-cart/)
