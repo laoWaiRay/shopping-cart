@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.12c0523d.css",
+    "main.css": "/shopping-cart/static/css/main.9918e4df.css",
     "main.js": "/shopping-cart/static/js/main.8e1277b2.js",
     "static/media/doodles-logo.png": "/shopping-cart/static/media/doodles-logo.daddf7b4d6c0c28c35d8.png",
     "static/media/cryptopunks-logo.png": "/shopping-cart/static/media/cryptopunks-logo.49d065948fcde80d243e.png",
@@ -25,11 +25,11 @@
     "static/media/9378.png": "/shopping-cart/static/media/9378.5a581095e7e62ec7965e.png",
     "static/media/8173.png": "/shopping-cart/static/media/8173.cc8dd5ac5265554544b6.png",
     "index.html": "/shopping-cart/index.html",
-    "main.12c0523d.css.map": "/shopping-cart/static/css/main.12c0523d.css.map",
+    "main.9918e4df.css.map": "/shopping-cart/static/css/main.9918e4df.css.map",
     "main.8e1277b2.js.map": "/shopping-cart/static/js/main.8e1277b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.12c0523d.css",
+    "static/css/main.9918e4df.css",
     "static/js/main.8e1277b2.js"
   ]
 }
