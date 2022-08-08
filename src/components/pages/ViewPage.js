@@ -63,6 +63,10 @@ export default function ViewPage() {
     }
   }
 
+  const removeFromCart = (NFT) => {
+    NFT.inCart = false;
+  }
+
   const toggleFavourite = () => {
     NFT.favourited = !NFT.favourited;
     if (NFT.favourited) {
@@ -75,6 +79,10 @@ export default function ViewPage() {
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+  }
+
+  const makeBid = (amount) => {
+    NFT.bid = amount;
   }
 
   return (
@@ -133,6 +141,12 @@ export default function ViewPage() {
             <BidModal
               price={NFT.price}
               toggleModal={toggleModal}
+              makeBid={makeBid}
+              triggerFlash={triggerFlash}
+              flashMessage={'Succesfully created new active offer!'}
+              removeFromCart={removeFromCart}
+              NFT={NFT}
+              bid={NFT.bid}
             />
             :
             null

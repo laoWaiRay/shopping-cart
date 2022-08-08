@@ -138,7 +138,6 @@
   color: transparent;
   transition: all 200ms;
   margin-left: 1rem;
-
 }
 
 .fa-heart:hover {
@@ -152,7 +151,7 @@
   display: flex;
   color: #fff;
   font-weight: 700;
-  font-size: clamp(1.5rem, 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   width: 100%;
   align-items: center;
   justify-content: center;

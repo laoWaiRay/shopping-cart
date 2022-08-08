@@ -1,0 +1,87 @@
+.cart-page {
+  padding: 3rem;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.cart-page-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-img {
+  height: 10rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  height: 15rem;
+  border: 1px solid rgb(180, 169, 169);
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  padding: 0 2rem;
+}
+
+.cart-item-info,
+.cart-item-stats {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.remove-from-cart-btn,
+.remove-from-offers-btn,
+.edit-bid-btn {
+  align-self: flex-start;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px dotted #000;
+}
+
+.remove-from-cart-btn:hover,
+.remove-from-offers-btn:hover,
+.edit-bid-btn:hover,
+.make-bid-btn:hover {
+  cursor: pointer;
+}
+
+.cart-item-info .nft-artist {
+  font-size: 2.5rem;
+}
+
+.cart-item-info .nft-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.last-purchased-price,
+.your-offer {
+  margin-bottom: .5rem;
+}
+
+.cart-page-group-heading {
+  margin: 2rem 0;
+  font-weight: 500;
+}
+
+.cart-items .cart-page-group-heading {
+  margin-top: 0;
+}
+
+.make-bid-btn {
+  align-self: flex-start;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(23, 133, 236);
+  color: #fff;
+  transition: all 300ms;
+  margin-top: 1rem;
+}
+
+.make-bid-btn:hover {
+  filter: brightness(1.1);
+}

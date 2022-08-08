@@ -6,16 +6,23 @@ const ethereumToUsd = (eth) => {
 }
 
 export default function BidModal(props) {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(props.bid);
   const timerRef = useRef(null);
 
   const handleChange = (e) => {
     if (e.target.value > 9999) return
-    setValue(e.target.value)
+    if (!e.target.value) e.target.value = 0
+    if (e.target.value < 0) e.target.value = 0
+    if (e.target.value[0] == 0 && Number.isInteger(parseInt(e.nativeEvent.data))) e.target.value = parseInt(e.nativeEvent.data)
+    setValue(parseInt(e.target.value))
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    props.makeBid(parseInt(value))
+    props.removeFromCart(props.NFT)
+    props.toggleModal()
+    props.triggerFlash(props.flashMessage)
   }
 
   const increment = () => {
@@ -44,16 +51,11 @@ export default function BidModal(props) {
 
   const getCurrencyInput = () => {
     let style = {};
-    // if (value.length === 0 ) {
-    //   style = {display: 'none'}
-    // }
     if (value < 10) {
       style = {right: '18.5rem'}
-      console.log('hap path 1')
     }
     if (value >= 10) {
       style = {right: '17.5rem'}
-      console.log('hap path 2')
     }
     if (value >= 100) {
       style = {right: '16.5rem'}
@@ -82,7 +84,6 @@ export default function BidModal(props) {
               <input 
                 className='bid-amount-input' 
                 type={'number'} 
-                placeholder='Enter an amount'
                 onChange={handleChange}
                 value={value}
               />
@@ -109,8 +110,8 @@ export default function BidModal(props) {
               </div> 
             </div>
           </div>
-          <button className='submit-bid-btn' onClick={handleSubmit}>Make Offer</button>
-          <button className='cancel-bid-btn' onClick={props.toggleModal}>Cancel</button>
+          <button className='submit-bid-btn' type='button' onClick={handleSubmit}>Make Offer</button>
+          <button className='cancel-bid-btn' type='button' onClick={props.toggleModal}>Cancel</button>
         </form>
       </div>
     </div>
