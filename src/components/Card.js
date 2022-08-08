@@ -8,7 +8,7 @@ const ethereumToUsd = (eth) => {
 
 const formatViews = (views) => {
   if (parseInt(views) > 1000) {
-    return (views / 1000) + 'k'
+    return (views / 1000).toFixed(1) + 'k'
   }
   return views
 }
