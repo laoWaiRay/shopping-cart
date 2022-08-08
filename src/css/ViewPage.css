@@ -266,3 +266,41 @@
   top: 7px;
   right: 175px;
 }
+
+
+@media only screen and (max-width:1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  html {
+    font-size: 45%;
+  }
+
+  .pricing-btns .bid-btn,
+  .pricing-btns .cart-btn {
+    padding: .5rem 1rem;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  html {
+    font-size: 45%;
+  }
+
+  .pricing-btns .bid-btn,
+  .pricing-btns .cart-btn {
+    padding: 1.5rem 3rem;
+  }
+
+  .view-page {
+    height: 100%;
+  }
+
+  .view-page .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: initial;
+  }
+}

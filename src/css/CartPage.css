@@ -85,3 +85,9 @@
 .make-bid-btn:hover {
   filter: brightness(1.1);
 }
+
+@media only screen and (max-width: 500px) { 
+  .cart-item {
+    height: 20rem;
+  }
+}

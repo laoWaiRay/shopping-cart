@@ -66,3 +66,27 @@
   cursor: pointer;
   filter: brightness(1.1);
 }
+
+@media only screen and (max-width: 500px) { 
+  .homepage {
+    padding: 0 3rem;
+    display: initial;
+  }
+
+  .artist-links-container,
+  .trending-container {
+    padding: 3rem;
+  }
+  .navigate-to-shop-btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigate-to-shop-btn {
+    display: block;
+    margin-top: 5rem;
+    width: 60%;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
