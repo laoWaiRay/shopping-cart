@@ -119,13 +119,13 @@ export default function ViewPage() {
                 <button className='bid-btn' onClick={toggleModal}>Make an offer</button>
                 {NFT.inCart === false ? 
                   <button 
-                    className='cart-btn' 
+                    className='cart-btn'
                     onClick={() => {toggleCarted(NFT)}}
                   >
                     Add to cart
                   </button>
                   :
-                  <button 
+                  <button
                     className='cart-btn' 
                     onClick={() => {toggleCarted(NFT)}}
                     style={{background: 'rgb(137, 137, 137)'}}
@@ -133,7 +133,7 @@ export default function ViewPage() {
                     Remove from cart
                   </button>
                 }
-                
+
               </div>
             </div>
           </div>

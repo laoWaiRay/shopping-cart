@@ -45,7 +45,7 @@ button {
   background-color: #fff;
   box-shadow: 0 -5px 10px 2px #000;
   height: 8rem;
-  z-index: 999;
+  z-index: 9999;
 }
 .navbar-logo {
   margin-left: 2rem;
